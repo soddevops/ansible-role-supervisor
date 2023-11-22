@@ -1,4 +1,7 @@
 [supervisord]
+logfile = {{ supervisor_log_dir }}/supervisord.log
+logfile_maxbytes = 50MB
+loglevel = info
 nodaemon = {{ supervisor_nodaemon }}
 childlogdir = {{ supervisor_log_dir }}
 user = {{ supervisor_user }}
